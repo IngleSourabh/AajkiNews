@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import styles from "./banner.module.css";
 
 const Banner = () => {

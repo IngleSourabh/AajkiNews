@@ -1,17 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Loading from "../loading/Loading";
 import style from "./newsCard.module.css";
 import { Link } from "react-router-dom";
-import { useNews } from "../../store/DataStore";
-import { data } from "./../data/Data";
+
 
 const NewsCards = () => {
-  const { newsData, setNewsData } = useNews();
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setNewsData(data.results);
-  //   }, 1000);
-  // }, []);
+  const [newsData, setNewsData ] = useState([]);
 
   const baseURL= `https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?`
   const apiKey =`54wEynan3sCkO0gpCqfCGQAMY1AeX92Q`
