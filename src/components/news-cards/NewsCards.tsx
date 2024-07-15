@@ -44,7 +44,7 @@ const NewsCards = () => {
     {newsData?.map((news: any) => {
       return (
         <li className={style["news-list"]} key={news.id}>
-          <Link to={`/news/${news.id}`} className={style["link"]}>
+          <Link to={news.url} className={style["link"]}>
             <div>
             {news.media[0] && news.media[0]['media-metadata'] && news.media[0]['media-metadata'].length >= 1 && (
               <img
