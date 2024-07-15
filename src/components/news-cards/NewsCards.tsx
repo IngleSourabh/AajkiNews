@@ -9,7 +9,8 @@ const NewsCards = () => {
 
   const baseURL= `https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?`
   const apiKey =`54wEynan3sCkO0gpCqfCGQAMY1AeX92Q`
-
+  // const app =process.env.API_KEY;
+  // console.log(app,"app");
   useEffect(() => {
     const fetchNewsApi = async () => {
       try {
