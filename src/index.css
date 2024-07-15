@@ -1,0 +1,33 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none; 
+  cursor: pointer; 
+  transition: color 0.3s ease;
+}
+
+.container{
+  width: 80%;
+  margin-inline: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 96%;
+  }
+}
